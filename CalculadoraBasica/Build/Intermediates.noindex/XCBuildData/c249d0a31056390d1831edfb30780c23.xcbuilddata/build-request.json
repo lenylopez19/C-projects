@@ -1,0 +1,56 @@
+{
+  "buildCommand" : {
+    "command" : "build",
+    "skipDependencies" : false,
+    "style" : "buildAndRun"
+  },
+  "configuredTargets" : [
+    {
+      "guid" : "074b173963da8935f9fa01c47af42629b75890c082e9ad7c55b199bb8641274e"
+    }
+  ],
+  "containerPath" : "/Users/lenylopez/Documents/C PROJECTS/CalculadoraBasica/CalculadoraBasica.xcodeproj",
+  "continueBuildingAfterErrors" : false,
+  "enableIndexBuildArena" : false,
+  "hideShellScriptEnvironment" : false,
+  "parameters" : {
+    "action" : "build",
+    "activeArchitecture" : "arm64",
+    "activeRunDestination" : {
+      "disableOnlyActiveArch" : false,
+      "platform" : "macosx",
+      "sdk" : "macosx14.0",
+      "sdkVariant" : "macos",
+      "supportedArchitectures" : [
+        "arm64e",
+        "arm64",
+        "x86_64"
+      ],
+      "targetArchitecture" : "arm64"
+    },
+    "arenaInfo" : {
+      "buildIntermediatesPath" : "/Users/lenylopez/Documents/C PROJECTS/CalculadoraBasica/Build/Intermediates.noindex",
+      "buildProductsPath" : "/Users/lenylopez/Documents/C PROJECTS/CalculadoraBasica/Build/Products",
+      "derivedDataPath" : "/Users/lenylopez/Library/Developer/Xcode/DerivedData",
+      "indexDataStoreFolderPath" : "/Users/lenylopez/Library/Developer/Xcode/DerivedData/CalculadoraBasica-cnfdvqcajzwzieanlldrduprgsbz/Index.noindex/DataStore",
+      "indexEnableDataStore" : true,
+      "indexPCHPath" : "/Users/lenylopez/Library/Developer/Xcode/DerivedData/CalculadoraBasica-cnfdvqcajzwzieanlldrduprgsbz/Index.noindex/PrecompiledHeaders",
+      "pchPath" : "/Users/lenylopez/Documents/C PROJECTS/CalculadoraBasica/Build/Intermediates.noindex/PrecompiledHeaders"
+    },
+    "configurationName" : "Debug",
+    "overrides" : {
+      "synthesized" : {
+        "table" : {
+          "ENABLE_PREVIEWS" : "NO",
+          "ENABLE_XOJIT_PREVIEWS" : "NO"
+        }
+      }
+    }
+  },
+  "schemeCommand" : "launch",
+  "showNonLoggedProgress" : true,
+  "useDryRun" : false,
+  "useImplicitDependencies" : true,
+  "useLegacyBuildLocations" : false,
+  "useParallelTargets" : true
+}

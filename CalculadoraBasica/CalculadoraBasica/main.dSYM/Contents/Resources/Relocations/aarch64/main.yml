@@ -1,0 +1,11 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     "/Users/lenylopez/Library/CloudStorage/OneDrive-PontificiaUniversidadCatólicaMadreyMaestra/Macbook userSession/Macbook Documnets/C PROJECTS/CalculadoraBasica/CalculadoraBasica/main"
+relocations:
+  - { offsetInCU: 0x26, offset: 0x26, size: 0x8, addend: 0x0, symName: _suma, symObjAddr: 0x0, symBinAddr: 0x100003B74, symSize: 0x20 }
+  - { offsetInCU: 0x41, offset: 0x41, size: 0x8, addend: 0x0, symName: _suma, symObjAddr: 0x0, symBinAddr: 0x100003B74, symSize: 0x20 }
+  - { offsetInCU: 0x77, offset: 0x77, size: 0x8, addend: 0x0, symName: _resta, symObjAddr: 0x20, symBinAddr: 0x100003B94, symSize: 0x20 }
+  - { offsetInCU: 0xAD, offset: 0xAD, size: 0x8, addend: 0x0, symName: _mult, symObjAddr: 0x40, symBinAddr: 0x100003BB4, symSize: 0x20 }
+  - { offsetInCU: 0xE3, offset: 0xE3, size: 0x8, addend: 0x0, symName: _divi, symObjAddr: 0x60, symBinAddr: 0x100003BD4, symSize: 0x20 }
+  - { offsetInCU: 0x119, offset: 0x119, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x80, symBinAddr: 0x100003BF4, symSize: 0x234 }
+...
