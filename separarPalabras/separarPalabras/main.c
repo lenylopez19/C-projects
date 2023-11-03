@@ -40,16 +40,16 @@ void cleanString(char arr[],int size){
 
 int main(int argc, const char * argv[]) {
     char sentence[200];
-    printf("escriba una oracion : ");
-    scanf(" %[^\n]",sentence);
-    sentence[getStringSize(sentence)]='.';
-    int numberOfWords = getNumberOfWords(sentence);
-    char wordList[numberOfWords][20];
     int lastWordIndex=0;
     int savedWordIndex = -1;
     int tempWordIndex =0;
     int i,a;
     char tempWord[20];
+    printf("escriba una oracion : ");
+    scanf(" %[^\n]",sentence);
+    sentence[getStringSize(sentence)]='.';
+    int numberOfWords = getNumberOfWords(sentence);
+    char wordList[numberOfWords][20];
     for (i = 0; i<numberOfWords; i++) {
         cleanString(wordList[i],20);
     }
