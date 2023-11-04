@@ -38,13 +38,37 @@ void cleanString(char arr[],int size){
     }
 }
 
+void printStringArr(char arr[][20],int numberOfWords){
+    printf("[ ");
+    int wordLength;
+    int i,a;
+    for (i = 0; i<numberOfWords; i++) {
+        printf("[");
+        wordLength= 0;
+        for (a=0; arr[i][a]; a++) {
+            wordLength++;
+        }
+        for (a=0; arr[i][a]; a++) {
+            printf("'%c'",arr[i][a]);
+            if (a < wordLength-1) {
+                printf(",");
+            }
+        }
+        printf("]");
+        if (i<numberOfWords-1) {
+            printf(", ");
+        }
+    }
+    printf(" ]\n\n");
+}
+
+
 int main(int argc, const char * argv[]) {
     char sentence[200];
     int lastWordIndex=0;
-    int savedWordIndex = -1;
-    int tempWordIndex =0;
+    int wordListIndex = -1;
+    int newWordIndex;
     int i,a;
-    char tempWord[20];
     printf("escriba una oracion : ");
     scanf(" %[^\n]",sentence);
     sentence[getStringSize(sentence)]='.';
@@ -56,41 +80,17 @@ int main(int argc, const char * argv[]) {
     i=0;
     while(sentence[i]) {
         if (sentence[i]==' ' || sentence[i]=='.') {
-            savedWordIndex++;
-            cleanString(tempWord,0);
-            tempWordIndex=0;
+            wordListIndex++;
+            newWordIndex=0;
             for (a=lastWordIndex; a<i; a++) {
-                tempWord[tempWordIndex]=sentence[a];
-                tempWordIndex++;
+                wordList[wordListIndex][newWordIndex]=sentence[a];
+                newWordIndex++;
             }
             lastWordIndex=i+1;
         }
-        for (a=0; tempWord[a]; a++) {
-            wordList[savedWordIndex][a]=tempWord[a];
-        }
         i++;
     }
-    printf("lista de palabras = ");
-    printf("[ ");
-    int wordLength;
-    for (i = 0; i<numberOfWords; i++) {
-        printf("[");
-        wordLength= 0;
-        for (a=0; wordList[i][a]; a++) {
-            wordLength++;
-        }
-        for (a=0; wordList[i][a]; a++) {
-            printf("'%c'",wordList[i][a]);
-            if (a < wordLength-1) {
-                printf(",");
-            }
-        }
-        printf("]");
-        if (i<numberOfWords-1) {
-            printf(", ");
-        }
-    }
-    printf(" ]\n\n");
+    printStringArr(wordList,numberOfWords);
     for (i=0; i<numberOfWords; i++) {
         printf("%s\n",wordList[i]);
     }
